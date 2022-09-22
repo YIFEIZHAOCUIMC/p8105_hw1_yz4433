@@ -25,3 +25,27 @@ The dataset "penguins" shows the basic statistics of three penguins species. The
 img1 = ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
 ggsave("img1.png", img1)
 ```
+
+## Problem 2
+
+### Create Dataframe
+```{r}
+x1 = rnorm(10)
+x2 = c(x1 > 0)
+x3 = c("abc", "123", "a dog", "ddd", NA, "nice9", "species", "island", "length", "width")
+x4 = factor(c("top", "mid", "bot", "mid", "mid", "bot", "top", "bot", "top","mid"))
+df2 = data.frame(x1, x2, x3, x4)
+```
+
+### Calculate the mean
+```{r}
+y1 = pull(df2,var=1)
+mean(y1)
+y2 = pull(df2,var=2)
+mean(y2)
+y3 = pull(df2,var=3)
+mean(y3)
+y4 = pull(df2,var=4)
+mean(y4)
+```
+After calculation, we find the first two variables (a random sample of size 10 from a standard Normal distribution, and a logical vector indicating whether elements of the sample are greater than 0) work but the last two variables (a character vector of length 10, and a factor vector of length 10, with 3 different factor “levels”) do not work.
