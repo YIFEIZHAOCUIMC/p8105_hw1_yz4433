@@ -18,7 +18,7 @@ summary(penguins)
 nrow(penguins)
 ncol(penguins)
 ```
-The dataset "penguins" shows the basic statistics of three penguins species. The "penguins" is a 344 \times 8 dataset. The mean flipper length is 200.9mm except two NA values.
+The dataset "penguins" shows the basic statistics of three penguins species. The "penguins" is a 344 $\times$ 8 dataset. The mean flipper length is 200.9mm except two NA values.
 
 ### Plotting
 ```{r}
