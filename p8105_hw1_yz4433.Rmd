@@ -1,7 +1,7 @@
 ---
-title: "p8105_hw1_yz4433.Rmd"
+title: "HW1_yz4433.Rmd"
 author: "Yifei Zhao"
-date: "2022-09-15"
+date: "2022-09-21"
 output: html_document
 ---
 
@@ -57,4 +57,4 @@ z2 = as.numeric(y2)
 z3 = as.numeric(y3)
 z4 = as.numeric(y4)
 ```
-After applying as.numeric function for these four variables, we find the third variable still does not work, but the last variable works and no warning message appears. From my perspective, the numerical conversion works on the factor vector, but it does not work on converting character-type vector to numerical vector. Considering calculation for the mean, if the mean of variable can be calculated directly, the conversion will not change the mean. However, if the variable is a factor-type vector, the numerical conversion will help successfully calculate the mean level of factor vector, and for the character vector, it does not work successfully.
+After applying as.numeric function for these four variables, we find the third variable still does not work, but the last variable works and no warning message appears. From my perspective, the numerical conversion works on the factor vector, but it does not work on converting character-type vector to numeric vector. Considering calculation for the mean, if the mean of variable can be calculated directly, the conversion will not change the mean. However, if the variable is a factor-type vector, the numerical conversion will help successfully calculate the mean level of factor vector, and for the character vector, it does not work successfully.
